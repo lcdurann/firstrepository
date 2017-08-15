@@ -6,42 +6,42 @@ int main(void)
   std::cin>> x;
   std::cin>> y;
   std::cin>> z;
-  if((x>y)and(y>z))
+  if((x>=y)and(y>=z))
     {
       (a=x);
       (b=y);
       (c=z);
       
     }
-   if((x>z)and(z>y))
+   if((x>=z)and(z>=y))
     {
       (a=x);
       (b=z);
       (c=y);
       
     }
-   if((y>x)and(x>z))
+   if((y>=x)and(x>=z))
     {
       (a=y);
       (b=x);
       (c=z);
       
     }
-    if((y>z)and(z>x))
+    if((y>=z)and(z>=x))
     {
       (a=y);
       (b=z);
       (c=x);
       
     }
-     if((z>x)and(x>y))
+     if((z>=x)and(x>=y))
     {
       (a=z);
       (b=x);
       (c=y);
       
     }
-      if((z>y)and(y>x))
+      if((z>=y)and(y>=x))
     {
       (a=z);
       (b=y);
