@@ -18,7 +18,7 @@ int main(void)
   double eps=1.0e-6;
   int i=0;
   std::cout<<'\t'<<"i"<<'\t'<<'\t'<<"xr"<<std::endl;
-  for(i=1;i<=30;i++)
+  for(i=0;i<=30;i++)
     {
       xi=g(xi);
       if (std::fabs(f(xi))<=eps) break;
