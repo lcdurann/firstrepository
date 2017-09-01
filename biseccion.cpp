@@ -1,6 +1,6 @@
 #include<iostream>
 #include<cmath>
-const double xi=0.5671432904097838729999;
+const double xe=0.5671432904097838729999;
 double f(double x)
 {
   return exp(-x)-x;
@@ -9,7 +9,7 @@ int main(void)
 {
   std::cout.precision(16);
   std::cout.setf(std::ios::scientific);
-  double xl=-1.0,xu=1.0,xr=0.0,E_a=0.0;
+  double xl=-1.0,xu=1.0,xr=0.0,E=0.0;
   double eps=1.0e-6;
   int n=0;
   for(n=1;n<=30;n++)
@@ -26,9 +26,9 @@ int main(void)
 	 xl=xr;
        }
     
-     E_a=100*fabs((xi-xr)/(xi));
+     E=100*fabs((xe-xr)/(xe));
      
-     std::cout<<n<<'\t'<<xr<<'\t'<<E_a<<std::endl;
+     std::cout<<n<<'\t'<<xr<<'\t'<<E<<std::endl;
   }
   std::cout<<"raíz= ";
   std::cout<<xr<<std::endl;

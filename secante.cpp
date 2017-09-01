@@ -1,6 +1,6 @@
 #include<iostream>
 #include<cmath>
-const double xi=0.5671432904097838729999;
+const double xe=0.5671432904097838729999;
 double f(double x)
 {
   return (exp(-x))-x;
@@ -22,7 +22,7 @@ int main(void)
 	  xu=xr;
 	}
      std::cout<<'\t'<<i<<'\t'<<xr<<'\t'<<E<<std::endl;
-      E=100*fabs((xi-xr)/(xi));
+      E=100*fabs((xe-xr)/(xe));
     }
   std::cout<<"Raiz= ";
   std::cout<<xr<<std::endl;

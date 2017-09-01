@@ -1,6 +1,6 @@
 #include<iostream>
 #include<cmath>
-const double xi=0.5671432904097838729999;
+const double xe=0.5671432904097838729999;
 double f(double x)
 {
   return (exp(-x))-x;
@@ -19,7 +19,7 @@ int main(void)
     if (std::fabs(f(xr))<=eps) break;
     if(f(xr)*f(xl)<0){xu=xr;}
     else{xl=xr;}
-    E=100*fabs((xi-xr)/(xi));
+    E=100*fabs((xe-xr)/(xe));
     std::cout<<n<<'\t'<<xl<<'\t'<<xr<<'\t'<<xu<<'\t'<<f(xr)<<'\t'<<E<<std::endl;
   }
   
