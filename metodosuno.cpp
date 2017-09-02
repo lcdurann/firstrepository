@@ -12,7 +12,7 @@ double g(double x) //g es la función utilizada para iteración de punto fijo
 
 double h(double x)//h es la derivada de f
 {
-  return -exp(-x)-x;
+  return -exp(-x)-1;
 }
 
 int main(void)
@@ -91,7 +91,7 @@ int main(void)
   {
     xi4=xr4; 
     xr4=xr4-(f(xr4)/h(xr4));
-    if (std::fabs(f(xr4))<=eps) break;
+    if (f(xr4)==0) break;
     E4=100*fabs((xi4-xr4)/(xr4));
     std::cout<<b<<'\t'<<xr4<<'\t'<<E4<<std::endl;
     
