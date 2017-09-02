@@ -1,7 +1,5 @@
 #include<iostream>
 #include<cmath>
-const double xe=0.5671432904097838729999;
-const double xe2=2;
 double f(double x)
 {
   return exp(-x)-x;
@@ -23,8 +21,8 @@ int main(void)
   std::cout.setf(std::ios::scientific);
   double xl=-1.0,xu=1.0,xr=0.0,xi=0.0,E=0.0;      //metodo de bisección
   double xl2=-1.0,xu2=1.0,xr2=0.0,xi2=0.0,E2=0.0; //metodo de regula falsi
-  double xl3=0.0,xu3=3.0,xr3=0.0,xi3=0.0,E3=0.0;//metodo de iteración
-  double xl4=0.0,xu4=3.0,xr4=0.0,xi4=0.0,E4=0.0;//metodo de newton
+  double xr3=0.0,xi3=0.0,E3=0.0;//metodo de iteración
+  double xr4=0.0,xi4=0.0,E4=0.0;//metodo de newton
   double xl5=-1.0,xu5=1.0,xr5=0.0,xi5=0.0,E5=0.0;//metodo de secante
   double eps=1.0e-6;
   int n=0,m=0,a=0,b=0,c=0;
